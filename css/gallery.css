@@ -1,0 +1,75 @@
+	/*gallery slider*/
+
+	.gallery_slider{
+		height: 300px;
+		background-image: url(https://source.unsplash.com/1200x400/?hotel,room) 
+		,linear-gradient(185deg,#081f52,#4f6f10,transparent);
+		background-size: 140% 140%;
+		background-blend-mode: overlay;
+		background-position: center; 
+		position: relative;
+		display: flex;
+		justify-content: start;
+		padding-left: 50px;
+		align-items: center;
+	}
+
+	/*about us slider text*/
+	.gallery_slider h1	{
+		color:white;
+		font-size: 3rem;
+	}
+	@media(max-width: 768px){
+		.gallery_slider h1	{
+		font-size: 1.5rem;
+		}
+	}
+
+	/*gallery*/
+.grid_container{
+   display: grid;
+   position: relative;
+   padding:50px 20px;
+   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+   /*grid-template-columns:repeat(auto-fit,minmax(250px,1fr));*/
+   grid-column-gap:10px; 
+   grid-row-gap:20px;
+   overflow: hidden !important;
+   background: linear-gradient(160.21265958378285deg, rgba(115, 110, 13,1) 8.474124809741255%,
+   	rgba(73, 70, 86,1) 68.29147640791477%,rgba(73, 70, 87,1) 68.29147640791477%);
+	}
+	@media (min-width: 992px) {
+		.grid_container{
+			padding: 70px 40px;
+		}
+	}
+.grid_container .box figure:hover > img{
+	transform: scale(2) rotate(10deg);
+}
+	.gird_container .box{
+	position: relative;
+	max-height: 300px !important;
+	display: block;
+	wid
+	}
+	.grid_container .box figure{
+		border:7px solid white;
+		background: #000;
+		overflow:hidden;
+	}
+	.grid_container .box figure figcaption{
+		color: white;
+		z-index: 22;
+		position: relative;
+		padding: 2px 0px 2px 5px;
+	}
+	.grid_container .box img{
+		width: 100%;
+		height: 100%;
+		transition: transform 0.5s ease-in-out;
+	}
+	@media(min-width: 400px) and (max-width: 560px){
+		.grid_container .box img{
+			height: 200px;
+		}
+	}

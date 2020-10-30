@@ -1,0 +1,28 @@
+/*admission slider*/
+
+.admission_slider{
+	height: 300px;
+	background-image: url(https://source.unsplash.com/1200x400/?bed,sofa,room) 
+	,linear-gradient(185deg,#081f52,#4f6f10,transparent);
+	background-size: 140% 140%;
+	background-blend-mode: overlay;
+	background-position: center; 
+	position: relative;
+	display: flex;
+	justify-content: start;
+	padding-left: 50px;
+	align-items: center;
+}
+
+
+
+/*admission slider text*/
+.admission_slider h1	{
+	color:white;
+	font-size: 3rem;
+}
+@media(max-width: 768px){
+	.admission_slider h1	{
+	font-size: 1.5rem;
+	}
+}

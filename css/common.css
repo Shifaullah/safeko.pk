@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+*::-webkit-scrollbar{width : 10px;height: 10px;}
+*::-webkit-scrollbar-track{background: #2d2d2d;}
+*::-webkit-scrollbar-thumb{background: #ddd;border-radius: 20px;}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #ccc794;;
+}
+
+.anime{
+    animation: animate linear 3s;
+}
+@keyframes animate{
+    0%{background-size: 100% 100%; }
+    100%{background-size: 140% 140%; }
+}
+ .green{ color:  rgb(56, 243, 65) !important;}
+ .loader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 333333333333333333;
+    background: #d6d2c4;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    top:0;
+    left: 0;
+}
+.menuBtn{
+    color: white;
+    font-size: 20px;
+}
+.brand_name{
+    font-family:  'Audiowide', cursive;
+    font-size: 1.5rem;
+    color:#f2f5f1 !important;
+}
+@media (min-width: 991px)and (max-width: 1200px){
+    .brand_name{font-size: 1.2rem;margin-left: 20px !important;}
+  
+}
+@media (max-width: 400px){
+    .brand_name{font-size: 1rem;}
+}
+@media (max-width: 992px){
+      .brand{
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    }
+}
+.navbar{
+    background:linear-gradient(81.47858290860893deg, rgba(167, 250, 85,1) 23.819746293923863%,
+    rgba(56, 243, 65,1) 65.8330831160017%,rgba(27, 241, 60,1) 76.95045839815154%,
+    rgba(5, 240, 56,1) 85.87021298499266%);
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+}
+.navbar li a{
+    color: #fff !important;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition:color ease-in-out  0.5s;
+}
+.navbar li a:hover{
+    color:yellow !important;
+}
+.navbar img{
+    width: 60px;
+    height: 60px;
+}
+a.dropdown-item:hover{
+ background:linear-gradient(81.47858290860893deg, rgba(167, 250, 85,0.8) 23.819746293923863%,
+    rgba(56, 243, 65,0.8) 65.8330831160017%,rgba(27, 241, 60,0.8) 76.95045839815154%,
+    rgba(5, 240, 56,0.8) 85.87021298499266%)!important;
+}
+ .slidetotop{
+        width: 40px;
+        height: 40px;
+        font-size:1.5rem ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 1111;
+        background:linear-gradient(81.47858290860893deg,
+         rgb(16 ,23,10,  80%) 23.819746293923863%, rgb(19, 183, 27, 80%) 65.8330831160017%,rgb(10, 202, 40,  80%) 76.95045839815154%, 
+            rgb(78 ,175, 99 , 80%) 85.87021298499266%)!important;
+        right: 20px; 
+        transition: 0.5s ease-in-out;
+        bottom:100%;
+
+    }
+ .audioTxt{
+        font-family: 'Audiowide', cursive;
+
+    }
+.footer{
+    background:linear-gradient(85deg,#404040,#000000e0)
+}
+.footer input[type="text"],.footer input[type="email"]{
+    border: none;
+    outline: none;
+    background:transparent;
+    margin-top: 15px;
+    padding: 7px 0px 7px 12px;
+    width:100%;
+    color:white;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5),inset -3px -3px 3px rgba(0,0,0,0.2);
+}
+.footer .submit{
+    padding: 2px 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background:transparent;
+    border:none;
+    outline: none;
+    color: #fff;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5),inset -3px -3px 3px rgba(0,0,0,0.2);
+}
+.footer .copyright{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px 15px 20px;
+    text-align: center;
+
+}
+.footer .icons i{
+    font-size: 2rem;
+    margin-right: 15px;
+    margin-top: 15px;
+    background: transparent !important;
+    padding: 10px;
+    box-shadow:inset 1px -3px 7px 1px rgba(0,0,0,0.5), inset -3px -3px 3px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.footer .copyright p{
+    font-size: 0.9rem;
+    color:rgb(215 ,226, 169);
+}
+.footer .copyright a{
+        color:#fff;
+        font-family: 'Audiowide', cursive;
+        font-size: 0.9rem;
+        text-decoration: none;
+    }
